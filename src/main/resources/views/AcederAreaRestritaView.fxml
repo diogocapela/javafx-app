@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diogocapela.javafxapp.controllers.AcederAreaRestritaController">
+    <top>
+        <VBox alignment="CENTER">
+            <children>
+                <Label styleClass="page-title" text="Aceder a Área Restrita"/>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ChoiceBox fx:id="cartaoChoiceBox" layoutX="168.0" layoutY="109.0" prefWidth="150.0"/>
+                <ChoiceBox fx:id="equipamentoChoiceBox" layoutX="340.0" layoutY="109.0" prefWidth="150.0"/>
+                <ChoiceBox fx:id="diaChoiceBox" layoutX="167.0" layoutY="204.0" prefWidth="150.0"/>
+                <ChoiceBox fx:id="horaChoiceBox" layoutX="340.0" layoutY="204.0" prefWidth="150.0"/>
+                <Label layoutX="336.0" layoutY="80.0" text="Escolha um Equipamento:"/>
+                <Label layoutX="186.0" layoutY="80.0" text="Escolha um Cartão:"/>
+                <Label layoutX="196.0" layoutY="180.0" text="Escolha um Dia:"/>
+                <Label layoutX="357.0" layoutY="180.0" text="Escolha uma Hora:"/>
+                <Button layoutX="250.0" layoutY="278.0" mnemonicParsing="false" onAction="#handleAcederAreaRestrita" text="Aceder a Área Restrita"/>
+                <Label fx:id="colaboradorInfo" alignment="CENTER" layoutX="15.0" layoutY="364.0" minWidth="200.0" textAlignment="CENTER"/>
+                <Label fx:id="areaRestritaInfo" alignment="CENTER" layoutX="444.0" layoutY="364.0" minWidth="200.0" textAlignment="CENTER"/>
+                <Label fx:id="perfilInfo" alignment="CENTER" layoutX="227.0" layoutY="364.0" minWidth="200.0" textAlignment="CENTER"/>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

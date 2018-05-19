@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diogocapela.javafxapp.controllers.MenuController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Main">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openDashboard" text="Dashboard"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openLogger" text="Logger"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openDashboard" text="Load Data"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openDashboard" text="Save Data"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Sair"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Registos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openAreasRestritas" text="Registo de Áreas Restritas"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openCartoes" text="Registo de Cartões"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openColaboradores" text="Registo de Colaboradores"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openEquipamentos" text="Registo de Equipamentos"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openPeriodosAutorizacao" text="Registo de Períodos de Autorização"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Acções">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openRegistarPerfil" text="Registar Novo Perfil de Acesso"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openAcederAreaRestrita" text="Aceder a Área Restrita"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diogocapela.javafxapp.controllers.DashboardController">
+    <top>
+        <VBox alignment="CENTER">
+            <children>
+                <Label styleClass="page-title" text="Dashboard"/>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" style="-fx-background-color: lightgrey;">
+                    <children>
+                        <Label text="Serialized Binary Files" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="25.0" top="10.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="serealizedFileChoicebox" prefHeight="30.0" prefWidth="160.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </ChoiceBox>
+                        <Button minHeight="70.0" minWidth="160.0" mnemonicParsing="false" onAction="#handleDeserializeData" text="Load from Binary Data" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </Button>
+                        <Button minHeight="70.0" minWidth="160.0" mnemonicParsing="false" onAction="#handleSerializeData" text="Save to Binary Data" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="15.0" right="15.0"/>
+                    </padding>
+                </VBox>
+                <VBox alignment="TOP_CENTER" style="-fx-background-color: lightgrey;">
+                    <children>
+                        <Label text="Text Files">
+                            <VBox.margin>
+                                <Insets bottom="25.0" top="10.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="textFileChoicebox" prefHeight="30.0" prefWidth="160.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </ChoiceBox>
+                        <Button minHeight="70.0" minWidth="160.0" mnemonicParsing="false" onAction="#handleLoadChoosenFile" text="Load from Text Files" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="15.0" right="15.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

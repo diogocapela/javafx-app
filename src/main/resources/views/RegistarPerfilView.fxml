@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diogocapela.javafxapp.controllers.RegistarPerfilController">
+    <top>
+        <VBox alignment="CENTER">
+            <children>
+                <Label styleClass="page-title" text="Registar Perfil"/>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <VBox BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="Lista de Períodos de Autorização Disponíveis:">
+                            <VBox.margin>
+                                <Insets bottom="15.0" top="20.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                        <ScrollPane prefHeight="500.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+                            <content>
+                                <VBox fx:id="inputListaPeriodosAutorizacao">
+                                    <children>
+
+                                    </children>
+                                </VBox>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </VBox>
+            </center>
+            <left>
+                <VBox prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="ID do Perfil:">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="25.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="id" promptText="int (unique)">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="15.0"/>
+                            </VBox.margin>
+                        </TextField>
+                        <Label text="Descrição:">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="25.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="descricao" promptText="string">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="15.0"/>
+                            </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#handleAddPerfil" text="Criar Novo Perfil">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="25.0"/>
+                            </VBox.margin>
+                        </Button>
+                        <Label text="Lista de Perfis:">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="25.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <TableView fx:id="tabela">
+                                    <columns>
+                                        <TableColumn fx:id="col1" text="ID (Unique)"/>
+                                        <TableColumn fx:id="col2" text="Descrição"/>
+                                    </columns>
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                                    </VBox.margin>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </left>
+        </BorderPane>
+    </center>
+</BorderPane>

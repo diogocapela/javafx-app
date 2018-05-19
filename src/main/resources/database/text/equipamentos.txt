@@ -1,0 +1,10 @@
+1;Equipamento Cantina;Entrada;1;
+2;Equipamento Cantina;Saída;1;
+3;Equipamento Edifício A;Entrada;2;
+4;Equipamento Edifício A;Saída;2;
+5;Equipamento Edifício B;Entrada;3;
+6;Equipamento Edifício B;Saída;3;
+7;Equipamento Biblioteca;Entrada;4;
+8;Equipamento Biblioteca;Saída;4;
+9;Equipamento Edifício H;Entrada;5;
+10;Equipamento Edifício H;Saída;5;

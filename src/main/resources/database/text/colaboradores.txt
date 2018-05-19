@@ -1,0 +1,7 @@
+1;Diogo Capela;DC;1;
+2;Filipe Couto;FC;1;
+3;José Freitas;JS;2;
+4;Luís Sousa;LS;2;
+5;Nelson Marques;NM;2;
+6;Pedro Canedo;PC;1;
+7;André Sousa;AS;1;

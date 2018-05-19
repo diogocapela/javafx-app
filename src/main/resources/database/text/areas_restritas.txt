@@ -1,0 +1,5 @@
+1;Cantina;ISEP;500;
+2;Edifício A;ISEP;1600;
+3;Edifício B;ISEP;800;
+4;Biblioteca;ISEP;200;
+5;Edifício H;ISEP;450;
